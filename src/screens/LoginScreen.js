@@ -19,26 +19,32 @@ const LoginScreen = ({ navigation }) => {
         navigation.navigate('Home', { name: 'Jane' })
     }
 
-    useLayoutEffect(() => {
-        _navigation.setOptions({
-            headerShown: false
-        })
-    }, [])
+    // useLayoutEffect(() => {
+    //     _navigation.setOptions({
+    //         headerShown: false
+    //     })
+    // }, [])
 
     return (
-        <SafeAreaView style={{ display: "flex", backgroundColor: colorValues.elements.background, height: "100%" }}>
+        <SafeAreaView style={{ 
+            display: "flex", 
+            backgroundColor: colorValues.elements.background,
+            alignItems: 'center',
+            height: "100%" 
+        }}>
             <View>
                 <Text style={{
                     ...texts.title,
                     marginTop: 24,
                     marginBottom: 24,
-                    textAlign: "center"
+                    textAlign: "center",
+                    width: "100%"
                 }}>
                     Colib
                 </Text>
             </View>
             <View
-                style={{ paddingHorizontal: 20 }}
+                style={{ paddingHorizontal: 20, maxWidth: 700, width: "100%" }}
             >
                 <View>
                     <TextInput
@@ -111,7 +117,7 @@ const LoginScreen = ({ navigation }) => {
                         <Text style={{
                             textAlign: "center",
                         }}>
-                            Login with Google
+                            Login with Googlee
                         </Text>
                     </TouchableHighlight>
                 </View>
