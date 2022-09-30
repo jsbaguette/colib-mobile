@@ -9,7 +9,6 @@ import {
 const HomeScreen = ({ route }) => {
     const navigation = useNavigation()
 
-    console.log(navigation)
     useLayoutEffect(() => {
         navigation.setOptions({
             headerShown: false
@@ -17,10 +16,10 @@ const HomeScreen = ({ route }) => {
     }, [])
 
     return (
-    <SafeAreaView className="bg-blue-500">
+    <SafeAreaView>
         <View>
-            <Text className="font-bold text-xl">
-                { route.params.name }
+            <Text>
+                { route.params?.name }
                 <ChevronDownIcon size={20} color="#00CCBB" />
             </Text>
         </View>

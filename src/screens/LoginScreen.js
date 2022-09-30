@@ -19,12 +19,6 @@ const LoginScreen = ({ navigation }) => {
         navigation.navigate('Home', { name: 'Jane' })
     }
 
-    // useLayoutEffect(() => {
-    //     _navigation.setOptions({
-    //         headerShown: false
-    //     })
-    // }, [])
-
     return (
         <SafeAreaView style={{ 
             display: "flex", 
@@ -117,7 +111,7 @@ const LoginScreen = ({ navigation }) => {
                         <Text style={{
                             textAlign: "center",
                         }}>
-                            Login with Googlee
+                            Login with Google
                         </Text>
                     </TouchableHighlight>
                 </View>
