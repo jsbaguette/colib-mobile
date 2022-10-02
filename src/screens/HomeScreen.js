@@ -1,6 +1,6 @@
 import { Text, SafeAreaView, View } from 'react-native'
 import React, { useLayoutEffect } from 'react'
-import { useNavigation }  from "@react-navigation/native"
+import { Link, useNavigation }  from "@react-navigation/native"
 
 import { 
     ChevronDownIcon
@@ -21,6 +21,9 @@ const HomeScreen = ({ route }) => {
             <Text>
                 { route.params?.name }
                 <ChevronDownIcon size={20} color="#00CCBB" />
+                <Link to={{ screen: 'Login'}}>
+                    Navigate to login
+                </Link>
             </Text>
         </View>
     </SafeAreaView>
