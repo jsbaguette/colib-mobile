@@ -9,6 +9,8 @@ import NotFoundScreen from './src/screens/NotFoundScreen.js';
 
 const Stack = createNativeStackNavigator();
 
+console.log("i am here")
+
 const linking = {
   prefixes: [
     'colib://', 
@@ -17,10 +19,10 @@ const linking = {
   config: {
     screens: {
       Login: {
-        path: "login"
+        path: "/login"
       },
       Home: {
-        path: ""
+        path: "/"
       },
       NotFound: {
         path: "*"
