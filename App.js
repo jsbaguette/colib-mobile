@@ -19,10 +19,10 @@ const linking = {
   config: {
     screens: {
       Login: {
-        path: "/login"
+        path: "login"
       },
       Home: {
-        path: "/"
+        path: ""
       },
       NotFound: {
         path: "*"
