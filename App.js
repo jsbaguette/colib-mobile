@@ -9,13 +9,11 @@ import NotFoundScreen from './src/screens/NotFoundScreen.js';
 
 const Stack = createNativeStackNavigator();
 
-console.log("i am here")
-
 const linking = {
-  prefixes: [
-    'colib://', 
-    'https://colib.io'
-  ],
+  // prefixes: [
+  //   'colib://', 
+  //   'https://colib.io'
+  // ],
   config: {
     screens: {
       Login: {
